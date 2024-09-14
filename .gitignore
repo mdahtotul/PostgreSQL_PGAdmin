@@ -1,0 +1,8 @@
+.env
+.vscode
+venv
+postgresql/*
+pgadmin4/*
+!pgamdin4
+!postgresql
+private-keys/*
