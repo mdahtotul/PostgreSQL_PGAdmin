@@ -47,18 +47,18 @@ Active root user and
       PGADMIN_DEFAULT_PASSWORD=your_password
       POSTGRES_PASSWORD=your_password
       now save and exit: ctrl+x > y > Enter
-
-##### Create pgadmin4 directory in the directory copied from github and ensure read/write permission for docker
-
+      
+##### Create pgadmin4 directory in the directory copied from github and Add config_local.py file in the pgadmin4
       sudo mkdir -p ./pgadmin4
-      sudo chown -R 5050:5050 ./pgadmin4
-      sudo chmod -R 700 ./pgadmin4
-
-##### Add config_local.py file in the pgadmin4 and add
-
       nano config_local.py
       SESSION_DB_PATH = '/tmp/pgadmin_sessions'
       now save and exit: ctrl+x > y > Enter
+
+##### ensure read/write permission of pgadmin4 for pgadmin to use
+      sudo chown -R 5050:5050 ./pgadmin4
+      sudo chmod -R 700 ./pgadmin4
+
+
 
 ### Step-5
 
